@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+    
+   
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+
+    
+</head>
+<body>
+  <div data-role="page">
+<!-- this is the side panel content -->
+    <div data-role="panel" id="panel" data-position="right" data-theme="a" data-display="overlay" >
+ 
+<!--    <button data-icon="flat-man" data-theme="c" class=" ui-btn ui-btn-c ui-icon-flat-man ui-btn-icon-left ui-shadow ui-corner-all">Valet</button> -->
+        
+        
+     <!-- valet dialogue -->
+        <a href="#popupValet" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-c ui-icon-flat-man ui-btn-icon-left ui-shadow ui-corner-all">Valet</a>
+<div data-role="popup" id="popupValet" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+    <div data-role="header" data-theme="a">
+    <h1>Vehicle Valet</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <h3 class="ui-title">When would you like your car out front?</h3>
+   <!-- <p>This action cannot be undone.</p> -->
+        <fieldset data-role="controlgroup" data-theme="c">
+    <!-- <legend>Choose:</legend> -->
+    <input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked="">
+    <label for="checkbox-1a">Right Away</label>
+    <input type="checkbox" name="checkbox-2a" id="checkbox-2a">
+    <label for="checkbox-2a">5 Minutes</label>
+    <input type="checkbox" name="checkbox-3a" id="checkbox-3a">
+    <label for="checkbox-3a">10 Minutes</label>
+    <input type="checkbox" name="checkbox-4a" id="checkbox-4a">
+    <label for="checkbox-4a">20 Minutes</label>
+        </fieldset>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-c" data-rel="back">Cancel</a>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-c" data-rel="back" data-transition="flow">Valet Me</a>
+    </div> <!-- valet dialogue -->
+    
+</div>   
+           
+     <!-- checkout dialogue -->
+        <a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-c ui-icon-flat-man ui-btn-icon-left ui-shadow ui-corner-all">Check Out</a>
+<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+    <div data-role="header" data-theme="a">
+    <h1>Check Out?</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <h3 class="ui-title">Are you sure you want to Check out of room 322?</h3>
+    <p>This action cannot be undone.</p>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-c" data-rel="back">Cancel</a>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-c" data-rel="back" data-transition="flow">Check Out Now</a>
+    </div> <!-- checkout dialogue -->
+</div>
+   
+         
+    </div> <!-- this is the side panel content -->
+    
+    <div data-role="header" data-theme="c">
+      <a data-iconpos="notext"  data-role="button" data-icon="home" title="Home">Home</a>
+      <center><img src="img/BHH-web-small-dark.png" alt="" ></center>  
+      <a data-iconpos="notext" href="#panel" data-role="button" data-icon="flat-menu"></a>
+   <p style="background-color:#facCd9;"><small><hr color="#faccd9"></small></p>
+    </div>
+
+    <div data-role="content" role="main" style="background-image: url(img/2.png); height: 100%; width: auto; background-size: cover;">
+       <!-- image -->    
+<div class="diy-slideshow" >
+	<figure class="show">
+		<img src="img/2.png" width="100%" style="opacity:0.0;" />
+	</figure>
+</div> <!-- end image --> 
+</div>
+     <!-- Room Controls -->
+      <a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-c ui-icon-flat-man ui-btn-icon-left ui-shadow ui-corner-all">Room Controls</a>
+<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+    <div data-role="header" data-theme="a">
+    <h1>Check Out?</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <h3 class="ui-title">Are you sure you want to Check out of room 322?</h3>
+    <p>This action cannot be undone.</p>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-c" data-rel="back">Cancel</a>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-c" data-rel="back" data-transition="flow">Check Out Now</a>
+    </div> <!-- checkout dialogue -->
+</div>
+      
+      <button data-icon="flat-man" data-theme="c" class=" ui-btn ui-btn-c ui-icon-flat-man ui-btn-icon-left ui-shadow ui-corner-all">Room Service</button>
+      
+      
+      <div data-role="collapsible-set" data-theme="c" data-content-theme="a">
+        <div data-role="collapsible" data-collapsed-icon="flat-time" data-expanded-icon="flat-cross" data-collapsed="true">
+          <h3>Hotel Events</h3>
+          
+            <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fwww.bootstrap.splicedevelop.com%2Fevent.xml&chan=linkno&au=y&date=y&utf=y&html=a"  charset="UTF-8" type="text/javascript"></script>
+
+<noscript>
+<a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fwww.bootstrap.splicedevelop.com%2Fevent.xml&chan=linkno&au=y&date=y&utf=y&html=y">View RSS feed</a>
+</noscript>
+    
+        </div>      
+      </div>
+      
+
+      <!-- footer -->
+    <div data-role="footer" data-theme="c" data-position="fixed">
+        <p style="background-color:#facCd9;"><small><hr color="#faccd9"></small></p>
+		<em><small>9641 Sunset Blvd, Beverly Hills, CA 90210 (310) 276-2251</small></em>
+		
+	</div><!-- /footer -->
+      
+      
+      
+      
+
+</body>
+</html>
